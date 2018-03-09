@@ -1,0 +1,160 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+#navbar-main .form-control.input-sm {
+  padding: 0 26px;
+  margin: 8px;
+  height: 24px;
+  background: url("../img/search24px.png") no-repeat;
+}
+
+.navbar-brand {
+  padding: 1px 0 3px;
+}
+.navbar-brand img {
+  height: 36px;
+  margin-right: 14px;
+}
+
+.dropdown-menu {
+  min-width: 120px;
+}
+.dropdown-menu li a.fr {
+  background-image: url("../img/FR.gif");
+  background-repeat:  no-repeat;
+  background-position: 80px 5px;
+}
+.dropdown-menu > li > a.fr:hover, .dropdown-menu > li > a.fr:focus {
+  background-image: url("../img/FR.gif");
+  background-repeat:  no-repeat;
+  background-position: 80px 5px;
+}
+.dropdown-menu li a.en {
+  background-image: url("../img/EN.gif");
+  background-repeat:  no-repeat;
+  background-position: 80px 5px;
+}
+.dropdown-menu > li > a.en:hover, .dropdown-menu > li > a.en:focus {
+  background-image: url("../img/EN.gif");
+  background-repeat:  no-repeat;
+  background-position: 80px 5px;
+}
+.dropdown-menu li a.ja {
+  background-image: url("../img/JA.gif");
+  background-repeat:  no-repeat;
+  background-position: 80px 5px;
+}
+.dropdown-menu > li > a.ja:hover, .dropdown-menu > li > a.ja:focus {
+  background-image: url("../img/JA.gif");
+  background-repeat:  no-repeat;
+  background-position: 80px 5px;
+}
+
+@media (max-width: 992px) {
+	.search.form-control {
+		width: 65px;
+	}
+}
+
+@media (max-width: 768px) {
+	.search.form-control {
+		display: none;
+	}
+  #navbar-main {
+      background-color: whitesmoke;
+  }
+  #navbar-main .dropdown-toggle, #navbar-main .dropdown-toggle:hover, #navbar-main .dropdown-toggle:focus {
+    background-color: white;
+  }
+  #navbar-main  ul.navbar-right > li > a, #navbar-main navbar-right > ul > li > a:hover, #navbar-main navbar-right > ul > li > a:focus {
+    background-color: white;
+  }
+  .dropdown-menu li a.fr, .dropdown-menu li a.en, .dropdown-menu li a.ja {
+    background-image: url("");
+  }
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height:500px;
+  }
+}
+
+
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/prototype/header-test2.jpg');
+  text-align: center;
+}
+header .header-content.white {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+  height: 100%;
+}
+header .header-content.blue {
+  position: relative;
+  background-color: rgba(0, 27, 99, 0.3);
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+  height: 100%;
+}
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+header .header-content .header-content-inner p {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  header {
+    height: 100%;
+  }
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-image: none;
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+    filter: none;
+    background-color: rgb(0, 27, 99);
+    border: 1px solid rgb(0, 27, 99);
+}
